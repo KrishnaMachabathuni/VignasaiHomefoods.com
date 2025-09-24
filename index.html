@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigna Sai Home Foods - Pure Home-Style Cooking | Hyderabad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Vigna Sai Home Foods</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#complaints" class="nav-link">Complaints</a></li>
+                <li class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Pure Home-Style Cooking</h1>
+                <p>Experience the authentic taste of traditional sweets and pickles made with 100% pure remedies and love, delivered fresh to your doorstep in Hyderabad.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('menu')">Order Now</button>
+                    <button class="btn-secondary" onclick="scrollToSection('about')">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="html.png.png" alt="Traditional Indian Sweets">
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Pure</h3>
+                <p>Natural ingredients</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-home"></i>
+                <h3>Home-Made</h3>
+                <p>Traditional recipes</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <h3>Fresh Delivery</h3>
+                <p>Direct to your door</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Delicious Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="sweets">Sweets</button>
+                <button class="category-btn" data-category="pickles">Pickles</button>
+                <button class="category-btn" data-category="Snacks">Snacks</button>
+                <button class="category-btn" data-category="Podulu">Podulu</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Vigna Sai Home Foods</h2>
+                    <p>Founded with a passion for preserving traditional flavors, Vigna Sai Home Foods brings you the authentic taste of home-cooked meals, sweets, and pickles. Our recipes have been passed down through generations, ensuring every bite carries the essence of pure, traditional cooking.</p>
+                    <p>We use only the finest ingredients and time-tested methods to create products that not only taste amazing but also provide the nutritional benefits of traditional remedies. From our kitchen to your table, we maintain the highest standards of quality and hygiene.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>999+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Menu Items</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="html.png.png" alt="Traditional Kitchen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>Home Delivery</h3>
+                    <p>Fresh food delivered to your doorstep across Hyderabad, SR Nagar and surrounding areas.</p>
+                    <ul>
+                        <li>Fast Delivery Available</li>
+                        <li>Free delivery above ₹2500</li>
+                        <li>Contactless delivery option</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Bulk Orders</h3>
+                    <p>Special pricing for bulk orders, perfect for events, offices, and celebrations.</p>
+                    <ul>
+                        <li>Minimum order: 10 items</li>
+                        <li>Custom packaging available</li>
+                        <li>24-hour advance notice</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Pre-Orders</h3>
+                    <p>Schedule your orders in advance for festivals and special occasions.</p>
+                    <ul>
+                        <li>Festival special items</li>
+                        <li>Custom sweet boxes</li>
+                        <li>Advance booking available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>SR Nagar, Hyderabad<br>Telangana, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 63035 43141</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>abhimachabathuni@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="delivery">Home Delivery</option>
+                            <option value="bulk">Bulk Order</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complaints Section -->
+    <section id="complaints" class="complaints-section">
+        <div class="container">
+            <h2 class="section-title">Complaints & Feedback</h2>
+            <div class="complaints-content">
+                <div class="complaints-info">
+                    <h3>We Value Your Feedback</h3>
+                    <p>Your satisfaction is our priority. If you have any complaints or suggestions, please don't hesitate to reach out to us. We take all feedback seriously and strive to improve our services continuously.</p>
+                    <div class="complaint-process">
+                        <div class="process-step">
+                            <i class="fas fa-edit"></i>
+                            <h4>Submit</h4>
+                            <p>Fill out the complaint form</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-search"></i>
+                            <h4>Review</h4>
+                            <p>We review within 24 hours</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Resolve</h4>
+                            <p>Quick resolution & follow-up</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="complaint-form">
+                    <h3>Submit a Complaint</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Order ID (if applicable)">
+                    </div>
+                    <select required>
+                        <option value="">Complaint Category</option>
+                        <option value="quality">Food Quality</option>
+                        <option value="delivery">Delivery Issue</option>
+                        <option value="service">Customer Service</option>
+                        <option value="billing">Billing Issue</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea placeholder="Describe your complaint in detail" rows="6" required></textarea>
+                    <button type="submit" class="btn-primary">Submit Complaint</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cartTotal">0</span></h3>
+            </div>
+            <button class="btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vigna Sai Home Foods</h3>
+                    <p>Bringing you the authentic taste of traditional home cooking with 100% pure ingredients and time-tested recipes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Home Delivery</a></li>
+                        <li><a href="#services">Bulk Orders</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#complaints">Complaints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> SR Nagar, Hyderabad ,500038</p>
+                    <p><i class="fas fa-phone"></i> +91 63035 43141</p>
+                    <p><i class="fas fa-envelope"></i> abhimachabathuni@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vigna Sai Home Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
